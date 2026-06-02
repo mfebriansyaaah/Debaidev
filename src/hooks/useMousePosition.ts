@@ -1,4 +1,3 @@
-// src/hooks/useMousePosition.ts
 import { useState, useEffect } from "react";
 
 export const useMousePosition = () => {

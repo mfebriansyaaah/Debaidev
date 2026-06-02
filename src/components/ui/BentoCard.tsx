@@ -1,4 +1,3 @@
-// src/components/ui/BentoCard.tsx
 "use client";
 
 import React, { useRef } from "react";
@@ -18,7 +17,6 @@ export const BentoCard = ({ children, className, innerClassName }: BentoCardProp
     if (!cardRef.current) return;
     const { left, top } = cardRef.current.getBoundingClientRect();
 
-    // Hitung posisi mouse relatif terhadap kartu
     const x = e.clientX - left;
     const y = e.clientY - top;
 
@@ -42,7 +40,6 @@ export const BentoCard = ({ children, className, innerClassName }: BentoCardProp
         className,
       )}
     >
-      {/* Efek Lampu Sorot / Spotlight Border Glow */}
       <div
         className="pointer-events-none absolute -inset-px rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500"
         style={{
@@ -50,7 +47,6 @@ export const BentoCard = ({ children, className, innerClassName }: BentoCardProp
         }}
       />
 
-      {/* Konten Kartu */}
       <div className={cn("relative z-10 p-6 h-full w-full flex flex-col justify-between", innerClassName)}>
         {children}
       </div>

@@ -1,7 +1,3 @@
-// src/data/portfolio.ts
-// Catatan: Tidak perlu mengimpor tipe data karena Project dan TechStackItem
-// sudah dideklarasikan secara global di dalam src/types/index.d.ts[cite: 1]
-
 export const projects: Project[] = [
   {
     id: "proj-1",
@@ -86,23 +82,19 @@ export const projects: Project[] = [
 ];
 
 export const techStacks: TechStackItem[] = [
-  // Languages
   { name: "TypeScript", category: "language", proficiency: "expert" },
   { name: "JavaScript (ES6+)", category: "language", proficiency: "expert" },
   { name: "Rust", category: "language", proficiency: "advanced" },
 
-  // Front-End
   { name: "React", category: "frontend", proficiency: "expert" },
   { name: "Next.js", category: "frontend", proficiency: "expert" },
   { name: "Tailwind CSS", category: "frontend", proficiency: "expert" },
   { name: "Framer Motion", category: "frontend", proficiency: "advanced" },
 
-  // Back-End & Web3
   { name: "Node.js", category: "backend", proficiency: "expert" },
   { name: "Express.js", category: "backend", proficiency: "expert" },
   { name: "Solana Programs", category: "web3", proficiency: "advanced" },
 
-  // Tools & Others
   { name: "Git / GitHub", category: "tool", proficiency: "expert" },
   { name: "Docker", category: "tool", proficiency: "intermediate" },
 ];

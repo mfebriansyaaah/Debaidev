@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import { BentoCard } from "@/components/ui/BentoCard";
 import { MapPin, Briefcase, ChevronRight, Code2 } from "lucide-react";
 import Link from "next/link";
@@ -7,7 +6,6 @@ export default function Home() {
   return (
     <main className="min-h-screen min-w-[410px] bg-[#050505] text-zinc-200 p-4 lg:p-12 font-sans selection:bg-purple-500/30">
       <div className="max-w-6xl mx-auto">
-        {/* Header Ringkas */}
         <header className="flex justify-between items-center mb-10">
           <Link href="/" className="text-xl font-bold tracking-tighter text-white hover:opacity-85 transition-opacity">
             <span className="text-[#D9F9DF]">debai</span><span className="text-[#B2A4FF]">dev</span><span className="text-[#D5E5D5]">.</span>
@@ -22,9 +20,7 @@ export default function Home() {
           </a>
         </header>
 
-        {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 xs:grid-cols-2 intro:grid-cols-3 intro:grid-rows-2 gap-4 auto-rows-[minmax(180px,_auto)]">
-          {/* Card 1: Main Hero Profile (Span 2x2 atau 1x2 pada >=794px) */}
           <BentoCard
             className="xs:col-span-2 intro:col-span-1 intro:row-span-2 h-fit intro:h-full flex flex-col justify-between p-8 bg-gradient-to-br from-white/[0.03] to-transparent"
             innerClassName="p-0"
@@ -49,7 +45,6 @@ export default function Home() {
             </div>
           </BentoCard>
 
-          {/* Card 2: Open Opportunity / Status */}
           <a
             href="/CV_M.Febriansyah_Full-Stack_Updated.pdf"
             download="CV_M.Febriansyah_Full-Stack_Updated.pdf"
@@ -70,7 +65,6 @@ export default function Home() {
             </BentoCard>
           </a>
 
-          {/* Card 3: Location */}
           <BentoCard className="xs:col-span-1 intro:col-span-1 intro:row-span-1 flex flex-col justify-between p-6">
             <MapPin className="text-zinc-600 mb-2" size={24} />
             <div>
@@ -81,14 +75,12 @@ export default function Home() {
             </div>
           </BentoCard>
 
-          {/* Card 4: Tech Stack Highlights */}
           <BentoCard className="xs:col-span-2 intro:col-span-2 intro:row-span-1 flex flex-col justify-center p-6 intro:p-8">
             <div className="flex items-center gap-3 mb-4">
               <Code2 className="text-purple-400" size={20} />
               <h3 className="text-white font-semibold">Engineering Arsenal</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {/* Tech Stack Chips */}
               {[
                 { name: "React", url: "https://react.dev/" },
                 { name: "Next.js", url: "https://nextjs.org/" },
