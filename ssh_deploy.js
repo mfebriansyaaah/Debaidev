@@ -21,11 +21,6 @@ conn.on('ready', () => {
     echo "=== Activating Node.js Environment ==="
     source /home/debaidev/nodevenv/myweb/22/bin/activate && cd /home/debaidev/myweb
     
-    echo "=== System Check ==="
-    git --version
-    node -v
-    npm -v
-    
     echo "=== Build Next.js project ==="
     npm run build
   `;
