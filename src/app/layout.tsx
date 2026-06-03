@@ -16,8 +16,13 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Muhammad Febriansyah Ramadhan | Senior Front-End Engineer",
-    template: "%s | debaidev",
+    default: "Debaidev - Software Engineer",
+    template: "%s | Debaidev",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   description:
     "Portfolio of Muhammad Febriansyah Ramadhan, a Senior Front-End Engineer specializing in building pixel-perfect, high-performance web applications with React, Next.js, TypeScript, and scalable UI architectures.",
@@ -41,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://debaidev.web.id",
-    title: "Muhammad Febriansyah Ramadhan | Senior Front-End Engineer",
+    title: "Debaidev - Software Engineer",
     description:
       "Crafting high-performance digital experiences with clean architecture, pixel-perfect UI, and seamless interactivity.",
     siteName: "debaidev",
@@ -57,7 +62,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Febriansyah Ramadhan | Senior Front-End Engineer",
+    title: "Debaidev - Software Engineer",
     description:
       "Crafting high-performance digital experiences with clean architecture and seamless interactivity.",
     images: ["/images/og-image.png"],
