@@ -82,14 +82,14 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap gap-2">
               {[
-                { name: "React", url: "https://react.dev/" },
+                { name: "React Native", url: "https://reactnative.dev/" },
                 { name: "Next.js", url: "https://nextjs.org/" },
                 { name: "TypeScript", url: "https://www.typescriptlang.org/" },
-                { name: "Node.js", url: "https://nodejs.org/" },
-                { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
-                { name: "Rust", url: "https://rust-lang.org/" },
-                { name: "Solana", url: "https://solana.com/" },
+                { name: "Express.js", url: "https://expressjs.com/" },
+                { name: "Spring Boot", url: "https://spring.io/projects/spring-boot" },
                 { name: "Go", url: "https://go.dev/" },
+                { name: "Gin", url: "https://gin-gonic.com/" },
+                { name: "FastAPI", url: "https://fastapi.tiangolo.com/" },
               ].map((tech) => (
                 <a
                   key={tech.name}
